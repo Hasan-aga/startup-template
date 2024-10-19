@@ -1,3 +1,11 @@
+import { Button } from "@/components/ui/button";
+import { DotPattern } from "@/components/ui/dot-pattern";
+import Navbar from "@/components/my-components/navbar";
+
 export default function Home() {
-  return <h1>Hello, Next.js!</h1>;
+  return (
+    <header>
+      <Navbar />
+    </header>
+  );
 }
