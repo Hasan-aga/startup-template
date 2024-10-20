@@ -1,3 +1,4 @@
+import GetStartedButton from "@/components/my-components/getStartedButton"
 import Navbar from "@/components/my-components/navbar"
 import BlurFade from "@/components/ui/blur-fade"
 import Link from "next/link"
@@ -36,9 +37,18 @@ export default function Home() {
           </h2>
         </BlurFade>
         <BlurFade delay={firstSectionAnimationDelay * 2.5} inView>
-          <span className="text-xl text-indigo-500 text-pretty tracking-tighter sm:text-3xl xl:text-4xl/none">
+          <p className="mb-6 text-xl text-indigo-500 text-pretty tracking-tighter sm:text-3xl xl:text-4xl/none ">
             Get a fast and eye-catching landing page
-          </span>
+          </p>
+        </BlurFade>
+
+        <BlurFade delay={firstSectionAnimationDelay * 3} inView>
+          <div className="flex flex-col justify-center items-center">
+            <GetStartedButton className="mt-10" />
+            <p className="text-sm text-indigo-500 text-pretty tracking-tighter sm:text-base xl:text-lg/none text-center mt-4">
+              Get your website tested for free
+            </p>
+          </div>
         </BlurFade>
       </section>
     </header>

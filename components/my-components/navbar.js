@@ -1,5 +1,5 @@
-import Title from "@/components/my-components/title";
-import { Button } from "@/components/ui/button";
+import Title from "@/components/my-components/title"
+import { Button } from "@/components/ui/button"
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -7,9 +7,10 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger
-} from "@/components/ui/navigation-menu";
-import ShinyButton from "@/components/ui/shiny-button";
-import Link from "next/link";
+} from "@/components/ui/navigation-menu"
+import ShinyButton from "@/components/ui/shiny-button"
+import Link from "next/link"
+import GetStartedButton from "./getStartedButton"
 
 export default function Navbar() {
   return (
@@ -43,11 +44,11 @@ export default function Navbar() {
             </NavigationMenu>
             <div className="flex gap-2">
               <ShinyButton>Login</ShinyButton>
-              <Button variant="destructive">Get Started for Free</Button>
+              <GetStartedButton />
             </div>
           </div>
         </div>
       </div>
     </div>
-  );
+  )
 }
