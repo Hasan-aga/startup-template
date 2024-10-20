@@ -53,7 +53,7 @@ export default function Home() {
           </div>
         </BlurFade>
         <BlurFade
-          className="mt-16 w-full"
+          className="mt-16 w-1/2"
           delay={firstSectionAnimationDelay * 2.5}
           inView
         >
