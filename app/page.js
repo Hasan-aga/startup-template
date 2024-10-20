@@ -1,6 +1,7 @@
 import GetStartedButton from "@/components/my-components/getStartedButton"
 import Navbar from "@/components/my-components/navbar"
 import BlurFade from "@/components/ui/blur-fade"
+import HeroVideoDialog from "@/components/ui/hero-video-dialog"
 import Link from "next/link"
 
 export default function Home() {
@@ -49,6 +50,19 @@ export default function Home() {
               Get your website tested for free
             </p>
           </div>
+        </BlurFade>
+        <BlurFade
+          className="mt-16 w-1/2"
+          delay={firstSectionAnimationDelay * 2.5}
+          inView
+        >
+          <HeroVideoDialog
+            className="dark:hidden block"
+            animationStyle="fade"
+            videoSrc="https://www.youtube.com/embed/l2B90FHYOIc?si=ZG_TTz0Kuo3W2f8g"
+            thumbnailSrc="http://img.youtube.com/vi/l2B90FHYOIc/maxresdefault.jpg"
+            thumbnailAlt="Hero Video"
+          />
         </BlurFade>
       </section>
     </header>

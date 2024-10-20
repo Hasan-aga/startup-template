@@ -14,7 +14,7 @@ import GetStartedButton from "./getStartedButton"
 
 export default function Navbar() {
   return (
-    <div className="w-full flex justify-center backdrop-blur-sm ">
+    <div className="w-full flex justify-center fixed top-0 backdrop-blur-lg bg-white/15 z-50">
       <div className="grid w-2/3 grid-cols-3 items-center">
         <div className="col-span-2 flex justify-start">
           <Link href="/">
