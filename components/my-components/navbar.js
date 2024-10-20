@@ -4,7 +4,6 @@ import {
   NavigationMenu,
   NavigationMenuContent,
   NavigationMenuItem,
-  NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger
 } from "@/components/ui/navigation-menu"
@@ -12,6 +11,14 @@ import ShinyButton from "@/components/ui/shiny-button"
 import Link from "next/link"
 import { Features } from "./features"
 import GetStartedButton from "./getStartedButton"
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle
+} from "../ui/card"
 
 export default function Navbar() {
   return (
@@ -30,7 +37,6 @@ export default function Navbar() {
                   <NavigationMenuTrigger>Features</NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <ul className="grid gap-3 p-4 lg lg:w-[500px] h-1/2">
-                      {" "}
                       <Features />
                     </ul>
                   </NavigationMenuContent>
@@ -38,7 +44,40 @@ export default function Navbar() {
                 <NavigationMenuItem>
                   <NavigationMenuTrigger>Solutions</NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <NavigationMenuLink>Link 2</NavigationMenuLink>
+                    <ul className="grid gap-3 p-4 grid-cols-2 lg lg:w-[500px] h-1/2">
+                      <Card>
+                        <CardHeader>
+                          <CardTitle>SEO</CardTitle>
+                          <CardDescription>
+                            Get a free SEO report
+                          </CardDescription>
+                        </CardHeader>
+                      </Card>
+                      <Card>
+                        <CardHeader>
+                          <CardTitle>Responsive Design</CardTitle>
+                          <CardDescription>
+                            Impress your clients with a responsive website
+                          </CardDescription>
+                        </CardHeader>
+                      </Card>
+                      <Card>
+                        <CardHeader>
+                          <CardTitle>Fast Website</CardTitle>
+                          <CardDescription>
+                            Users love fast loading websites
+                          </CardDescription>
+                        </CardHeader>
+                      </Card>
+                      <Card>
+                        <CardHeader>
+                          <CardTitle>Animation </CardTitle>
+                          <CardDescription>
+                            Get ahead of the competition with animations
+                          </CardDescription>
+                        </CardHeader>
+                      </Card>
+                    </ul>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
