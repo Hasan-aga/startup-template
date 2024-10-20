@@ -1,4 +1,5 @@
 import BrandList from "@/components/my-components/brandList"
+import { Features } from "@/components/my-components/features"
 import GetStartedButton from "@/components/my-components/getStartedButton"
 import Navbar from "@/components/my-components/navbar"
 import BlurFade from "@/components/ui/blur-fade"
@@ -11,6 +12,9 @@ export default function Home() {
     <header>
       <Navbar />
       <section className="w-full mt-28 flex flex-col justify-center items-center align-middle">
+        <div className="w-1/2">
+          <Features />
+        </div>
         <BlurFade delay={firstSectionAnimationDelay} yOffset={-10} inView>
           <Link
             href={"/about"}

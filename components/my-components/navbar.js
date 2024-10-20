@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/navigation-menu"
 import ShinyButton from "@/components/ui/shiny-button"
 import Link from "next/link"
+import { Features } from "./features"
 import GetStartedButton from "./getStartedButton"
 
 export default function Navbar() {
@@ -28,7 +29,10 @@ export default function Navbar() {
                 <NavigationMenuItem>
                   <NavigationMenuTrigger>Features</NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <NavigationMenuLink>Link</NavigationMenuLink>
+                    <ul className="grid gap-3 p-4 lg lg:w-[500px] h-1/2">
+                      {" "}
+                      <Features />
+                    </ul>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
