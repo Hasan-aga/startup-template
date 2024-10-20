@@ -1,23 +1,24 @@
+import Title from "@/components/my-components/title";
+import { Button } from "@/components/ui/button";
 import {
   NavigationMenu,
   NavigationMenuContent,
-  NavigationMenuIndicator,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
-  NavigationMenuViewport
+  NavigationMenuTrigger
 } from "@/components/ui/navigation-menu";
 import ShinyButton from "@/components/ui/shiny-button";
-import { Button } from "@/components/ui/button";
-import Title from "@/components/my-components/title";
+import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <div className="w-full flex justify-center">
+    <div className="w-full flex justify-center backdrop-blur-sm ">
       <div className="grid w-2/3 grid-cols-3 items-center">
         <div className="col-span-2 flex justify-start">
-          <Title text="Startup" />
+          <Link href="/">
+            <Title text="Startup" />
+          </Link>
         </div>
         <div className="col-span-1 flex justify-center">
           <div className="w-full flex justify-center items-center gap-8">
