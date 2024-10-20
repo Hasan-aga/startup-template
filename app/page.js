@@ -1,3 +1,4 @@
+import BrandList from "@/components/my-components/brandList"
 import GetStartedButton from "@/components/my-components/getStartedButton"
 import Navbar from "@/components/my-components/navbar"
 import BlurFade from "@/components/ui/blur-fade"
@@ -52,7 +53,7 @@ export default function Home() {
           </div>
         </BlurFade>
         <BlurFade
-          className="mt-16 w-1/2"
+          className="mt-16 w-full"
           delay={firstSectionAnimationDelay * 2.5}
           inView
         >
@@ -64,6 +65,9 @@ export default function Home() {
             thumbnailAlt="Hero Video"
           />
         </BlurFade>
+      </section>
+      <section className="w-full mt-28 flex flex-col justify-center items-center align-middle">
+        <BrandList />
       </section>
     </header>
   )
